@@ -1,13 +1,54 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+*:focus {
+  box-shadow: 0 0 0px 4px #897dac;
+}
+html {
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+input {
+  font-family: "Poppins", sans-serif;
+}
+button {
+  font-family: "Poppins", sans-serif;
+}
+.btn {
+  font-size: 1.6rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  padding: 1rem 2.5rem;
+  background-color: #23adad;
+  border: 1px solid #23adad;
+  color: #fff !important;
+  border-radius: 3rem;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+.btn:focus {
+  background-color: #2acfcf;
+  border: 1px solid #2acfcf;
+}
+ul {
+  list-style: none;
+}
+a {
+  color: #666;
+  text-decoration: none;
+  transition: all 0.4s;
+}
+@media (hover) {
+  .btn:hover {
+    background-color: #2acfcf;
+    border: 1px solid #2acfcf;
+  }
+  a:hover {
+    color: #000;
+  }
 }
